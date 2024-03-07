@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    font-family: 'League Spartan', sans-serif;
+}
+
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 340px;
+}
+
+h1{
+    color: white;
+}
+
+.displayPassword{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position:relative;
+    border-radius:1rem ;
+    margin: 1rem 0;
+    padding-top: 0.35rem;
+}
+
+.password{
+   background-color: transparent;
+    border: none;
+}
+
+.password::placeholder{
+    position: absolute;
+    opacity: 65%;
+    top: 50%;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    line-height:30px;
+    transform: translateY(-50%);
+    border: none;
+}
+
+.input{
+    background-color: white;
+    border-radius:1rem ;
+    padding: 2rem;
+}
+
+.length{
+    display: flex;
+    justify-content: space-between;
+}
+
+.generate-btn{
+    background-color: gray;
+    color: black;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.75rem;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.length p:nth-child(1){
+    margin-left: .35rem;
+}
+
+.length p:nth-child(2){
+    margin-right: 1.2rem;
+}
+
+.indicator{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+   
+}
+
+.Strength {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.Strength p{
+    font-weight: 150;
+    font-size: 1.1rem;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 0 1rem;
+}
+
+.tooltip{
+    position: absolute;
+    opacity: 0;
+    right: 35px;
+    top:30%;
+}
+
+.tooltip.active{
+    opacity: 1;
+}
